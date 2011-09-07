@@ -2,7 +2,7 @@
 
 Summary:    Pretty print Ruby objects with proper indentation and colors
 Name:       rubygem-%{oname}
-Version:    0.2.1
+Version:    0.4.0
 Release:    %mkrel 1
 Group:      Development/Ruby
 License:    GPLv2+
@@ -10,7 +10,7 @@ URL:        http://github.com/michaeldv/awesome_print
 Source0:    http://rubygems.org/gems/%{oname}-%{version}.gem
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 Requires:   rubygems
-Requires:   rubygem(rspec) >= 1.2.9
+Requires:   rubygem(rspec) >= 2.5.0
 BuildRequires: rubygems
 BuildArch:  noarch
 Provides:   rubygem(%{oname}) = %{version}
