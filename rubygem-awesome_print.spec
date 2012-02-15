@@ -3,7 +3,7 @@
 Summary:    Pretty print Ruby objects with proper indentation and colors
 Name:       rubygem-%{oname}
 Version:    0.4.0
-Release:    %mkrel 1
+Release:	2
 Group:      Development/Ruby
 License:    GPLv2+
 URL:        http://github.com/michaeldv/awesome_print
