@@ -47,3 +47,18 @@ rm -rf %buildroot
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/VERSION
 %{ruby_gemdir}/cache/%{oname}-%{version}.gem
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
+
+
+%changelog
+* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.4.0-2
++ Revision: 774161
+- mass rebuild of ruby packages against ruby 1.9.1
+
+* Wed Sep 07 2011 Alexander Barakin <abarakin@mandriva.org> 0.4.0-1
++ Revision: 698560
+- imported package rubygem-awesome_print
+
+* Wed Dec 01 2010 Rémy Clouard <shikamaru@mandriva.org> 0.2.1-1mdv2011.0
++ Revision: 604597
+- import rubygem-awesome_print
+
