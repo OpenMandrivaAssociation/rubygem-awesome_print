@@ -2,13 +2,12 @@
 
 Summary:    Pretty print Ruby objects with proper indentation and colors
 Name:       rubygem-%{oname}
-Version:    0.4.0
-Release:	2
+Version:    1.2.0
+Release:	1
 Group:      Development/Ruby
 License:    GPLv2+
 URL:        http://github.com/michaeldv/awesome_print
-Source0:    http://rubygems.org/gems/%{oname}-%{version}.gem
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+Source0:    http://rubygems.org/gems/awesome_print-1.2.0.gem
 Requires:   rubygems
 Requires:   rubygem(rspec) >= 2.5.0
 BuildRequires: rubygems
@@ -24,13 +23,11 @@ structure. Supports Rails ActiveRecord objects via included mixin.
 %build
 
 %install
-rm -rf %buildroot
 mkdir -p %{buildroot}%{ruby_gemdir}
 gem install --local --install-dir %{buildroot}%{ruby_gemdir} \
             --force --rdoc %{SOURCE0}
 
 %clean
-rm -rf %buildroot
 
 %files
 %defattr(-, root, root, -)
@@ -47,18 +44,3 @@ rm -rf %buildroot
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/VERSION
 %{ruby_gemdir}/cache/%{oname}-%{version}.gem
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
-
-
-%changelog
-* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.4.0-2
-+ Revision: 774161
-- mass rebuild of ruby packages against ruby 1.9.1
-
-* Wed Sep 07 2011 Alexander Barakin <abarakin@mandriva.org> 0.4.0-1
-+ Revision: 698560
-- imported package rubygem-awesome_print
-
-* Wed Dec 01 2010 Rémy Clouard <shikamaru@mandriva.org> 0.2.1-1mdv2011.0
-+ Revision: 604597
-- import rubygem-awesome_print
-
