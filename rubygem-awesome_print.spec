@@ -32,7 +32,7 @@ gem install --local --install-dir %{buildroot}%{ruby_gemdir} \
 %files
 %defattr(-, root, root, -)
 %dir %{ruby_gemdir}/gems/%{oname}-%{version}/
-%{ruby_gemdir}/gems/%{oname}-%{version}/init.rb
+# %{ruby_gemdir}/gems/%{oname}-%{version}/init.rb
 %{ruby_gemdir}/gems/%{oname}-%{version}/lib/
 %{ruby_gemdir}/gems/%{oname}-%{version}/rails/
 %{ruby_gemdir}/gems/%{oname}-%{version}/spec/
@@ -41,6 +41,6 @@ gem install --local --install-dir %{buildroot}%{ruby_gemdir} \
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/LICENSE
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/Rakefile
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/README.md
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/VERSION
+# %doc %{ruby_gemdir}/gems/%{oname}-%{version}/VERSION
 %{ruby_gemdir}/cache/%{oname}-%{version}.gem
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
